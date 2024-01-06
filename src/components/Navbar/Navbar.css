@@ -92,3 +92,7 @@
   color: white;
 }
 /* ---------- */
+
+.nav-dropdown {
+  display: none;
+}
