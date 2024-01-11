@@ -1,5 +1,14 @@
-import React from "react";
+import { Hero, NewCollections, Offers, Popular } from "../components";
+import { NewsLetter } from "../components/NewsLetter/NewsLetter";
 
 export const ShopMain = () => {
-  return <div>ShopMain</div>;
+  return (
+    <div>
+      <Hero />
+      <Popular />
+      <Offers />
+      <NewCollections />
+      <NewsLetter />
+    </div>
+  );
 };

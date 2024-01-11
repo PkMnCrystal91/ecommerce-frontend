@@ -1,15 +1,15 @@
-import { Item } from "../Item/Item";
-import data_product from "../assets/data";
+import { Item } from "../index";
+import new_collection from "../assets/new_collections";
 
-import "./Popular.css";
+import "./NewCollections.css";
 
-export const Popular = () => {
+export const NewCollections = () => {
   return (
-    <div className="popular">
-      <h1>POPULAR IN WOMEN</h1>
+    <div className="new-collections">
+      <h1>NEW COLECTIONS</h1>
       <hr />
-      <div className="popular-item">
-        {data_product.map((item, i) => {
+      <div className="collections">
+        {new_collection.map((item, i) => {
           return (
             <Item
               key={i}

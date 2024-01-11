@@ -25,7 +25,9 @@ export const Navbar = () => {
             setMenu("shop");
           }}
         >
-          Shop
+          <Link style={{ textDecoration: "none" }} to="/">
+            Shop
+          </Link>
           {menu === "shop" ? <hr /> : <></>}
         </li>
         <li
@@ -33,21 +35,30 @@ export const Navbar = () => {
             setMenu("mens");
           }}
         >
-          Men {menu === "mens" ? <hr /> : <></>}
+          <Link style={{ textDecoration: "none" }} to="/mens">
+            Men
+          </Link>{" "}
+          {menu === "mens" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
             setMenu("womens");
           }}
         >
-          Women {menu === "womens" ? <hr /> : <></>}
+          <Link style={{ textDecoration: "none" }} to="womens">
+            Women
+          </Link>{" "}
+          {menu === "womens" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
             setMenu("kids");
           }}
         >
-          Kids {menu === "kids" ? <hr /> : <></>}
+          <Link style={{ textDecoration: "none" }} to="/kids">
+            Kids
+          </Link>{" "}
+          {menu === "kids" ? <hr /> : <></>}
         </li>
       </ul>
       <div className="nav-login-cart">
