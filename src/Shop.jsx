@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Navbar } from "./components";
+import { Footer, Navbar } from "./components";
 import {
   Cart,
   LoginSignup,
@@ -25,6 +25,7 @@ export const Shop = () => {
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
