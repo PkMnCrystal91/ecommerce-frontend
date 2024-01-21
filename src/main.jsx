@@ -1,10 +1,10 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import { Shop } from "./Shop.jsx";
 import "./index.css";
+import { ShopContextProvider } from "./context/ShopContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <ShopContextProvider>
     <Shop />
-  </React.StrictMode>
+  </ShopContextProvider>
 );
