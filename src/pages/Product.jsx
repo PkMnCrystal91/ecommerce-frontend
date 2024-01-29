@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Breadcrum } from "../components/index";
+import { Breadcrum, ProductDisplay } from "../components/index";
 import { ShopContext } from "../context/ShopContext";
 import { useParams } from "react-router-dom";
 
@@ -11,6 +11,7 @@ export const Product = () => {
   return (
     <div>
       <Breadcrum product={product} />
+      <ProductDisplay product={product} />
     </div>
   );
 };
